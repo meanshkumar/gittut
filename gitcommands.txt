@@ -1,0 +1,47 @@
+Git Commands
+$ q <for quieting>
+$ pwd-present working directory
+$ ls -List content(Jo bhi folder mein ho)
+$ cd -change directory - cd path 
+$ git init -to initaialize 
+$ git config --global user.name "name"-to change the name
+$ git config --global user.email "email"-to change the email
+$ git status- Gives the status (kuch hai stage karne ko ya commit karne ko)
+$ git log- shows all the changes made 
+$ git add <file name>-add it to the staging area
+$ git add --a  -adds all files to staging area
+$ git commit -m "message that to be added to the change"- to comit all staged files 
+$ rm -rf .git-to remove git repositories
+$ git clone url of that repo<space>naMe of folder we want to name it to(only applicable if you wish to change)- clones the repo from internet to local machine
+$ touch <file name with extension to create a file >-to create a file 
+$ touch .gitignore -made to add folders file types that are going to be ignored
+$ IN GITIGNORE FOLDER USE THESE COMMANDS-
+$ foldername/ - to ignore particular folder 
+$ "filename with extension"-to ignore a particular file
+$ *.(file type) -for ex *.log - to ignore particular file type
+$ /folder/-used to ignore only outer folder (Agar andar mila to dikha dega untracked mein)
+$ git diff-compares the files between working directories and staging areas
+$ git diff --staged -compares the files between previous commit and staging area.
+$ git add . -add modified file to staging area again(all modified and new (untracked) files in the current directory and all subdirectories to the staging area )
+$ git commit -a -m "commit message" - to commit directly an modified file without staging area(note no untracked file can be commited directly)
+$ git mv <present-name> <new-name>-To Rename file
+$ git rm <file-name> -To Delete file
+$ git rm --cached <filename>-To make the file untracked from tracked
+$ git log -p -to show diff (all changes that were made)in each commit
+$ git log -p -n -to show diff (all changes that were made)in each commit upto n previous commits for ex "2"
+$ git log -- stat -shows what changes were made in each commit in a tabular and peculiar form
+$ git log pretty==oneline -show changes made in each commits in one line each
+$ git log pretty==short -show changes made in each commits in pretty & short form 
+$ git log pretty==full -show changes made in each commits in pretty & full form 
+$ git log pretty==format:"" -- "" -show changes each commits according to given placeholders-%h for abb commit hash %an for author name %ae for author email 
+$ git log --since=time - example 2.days or 4.weeks or 4.year or 2.months -shows commits in pretty way upto given time
+$ git commit --amend -To do modifications in previous commit message and merging present modification into it(use i and esc & :wq to use in  editor)
+$ git restore --staged <filename>-To make file unstaged from staged
+$ git checkout -- <filename>-To make File restore/unmodify to previous commit
+$ git checkout -f  -To make all File restore/unmodify to previous commit
+$ git push -u origin master -to push a repo
+$ git config --global alias.whatever short form you want to give to that big command line 'command of that actual command for ex- commit --ammend'
+  ex-$ git config --global alias.last 'log -p -1'
+$ git checkout -b <new-branch-name> - To create new branch
+$ git checkout <branch-name> -To switch into different branch
+$ git branch - to see all the branch
