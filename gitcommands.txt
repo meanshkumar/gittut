@@ -40,8 +40,12 @@ $ git restore --staged <filename>-To make file unstaged from staged
 $ git checkout -- <filename>-To make File restore/unmodify to previous commit
 $ git checkout -f  -To make all File restore/unmodify to previous commit
 $ git push -u origin master -to push a repo
+$ git push origin main -u -to push a updated repo
 $ git config --global alias.whatever short form you want to give to that big command line 'command of that actual command for ex- commit --ammend'
   ex-$ git config --global alias.last 'log -p -1'
 $ git checkout -b <new-branch-name> - To create new branch
 $ git checkout <branch-name> -To switch into different branch
 $ git branch - to see all the branch
+$ git merge "branch name" - to merge the branch
+
+q! mark to get out of vim editor
